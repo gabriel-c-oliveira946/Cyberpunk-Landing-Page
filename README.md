@@ -1,6 +1,6 @@
 # Cyberpunk Landing Page
 
-**🌍 [Acesso ao site:** (https://cyberpunkpage.vercel.app)]
+**🌍 [Acesso ao site](https://cyberpunkpage.vercel.app)** 
 
 ## Sobre o Projeto
 Esta é uma página web temática desenvolvida com estética **Cyberpunk**, criada exclusivamente com HTML5 e CSS3 puros. O objetivo principal do projeto foi a aplicação de variáveis de cor (`:root`), estruturação semântica e estilização avançada (sombras, brilhos e efeitos neon) sem o uso de frameworks externos.
