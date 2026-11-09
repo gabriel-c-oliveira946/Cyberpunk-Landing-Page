@@ -1,0 +1,120 @@
+/* Uso obrigatório do :root conforme o PDF do professor */
+:root {
+    --cor-primaria: #ff00aa;
+    --cor-secundaria: #00f0ff;
+    --cor-fundo: #0b0b1a;
+    --cor-texto: #eaeeea;
+    --fonte-texto: "Arial", "sans-serif";
+    --fonte-titulo: "Arial Black", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Tipografia e cores aplicadas com var() */
+header h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-size: 2.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Efeito de brilho neon no texto */
+    text-shadow: 0 0 10px var(--cor-secundaria), 0 0 20px var(--cor-secundaria);
+    margin-bottom: 10px;
+}
+
+/* Linha divisória com efeito neon */
+.neon-line {
+    border: 0;
+    height: 2px;
+    background-color: var(--cor-primaria);
+    box-shadow: 0 0 10px var(--cor-primaria), 0 0 20px var(--cor-primaria);
+    margin: 35px 0;
+}
+
+.texto-cyber p {
+    font-size: 1.15em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Container das imagens (Organização lado a lado de forma simples) */
+.galeria-cyber {
+    text-align: center;
+}
+
+.img-box {
+    display: inline-block;
+    width: 48%; /* Permite que as duas fiquem lado a lado */
+    margin: 0 0.5%;
+    vertical-align: top;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Efeito de Hover nas imagens */
+.img-box:hover {
+    transform: scale(1.05);
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 25px var(--cor-primaria);
+}
+
+.cyber-imagem {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Vídeo incorporado */
+.video-cyber {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-cyber iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: 2px solid var(--cor-primaria);
+    box-shadow: 0 0 15px var(--cor-primaria);
+    border-radius: 5px;
+}
+
+/* Responsividade Básica (Bônus para não quebrar no celular) */
+@media (max-width: 700px) {
+    .img-box {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .video-cyber iframe {
+        height: 250px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+}
